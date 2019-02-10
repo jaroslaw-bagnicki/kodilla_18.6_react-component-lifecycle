@@ -13,10 +13,8 @@ const App = React.createClass({
           React.createElement('span', {className: 'blueLabel'}, this.props.blue)
         ),
         React.createElement('div', {className: 'counters'}, 
-          // React.createElement(Counter, {value: this.red, className: 'counter red'}),
-          // React.createElement(Counter, {value: this.blue, className: 'counter blue'})
-          React.createElement('div', {value: this.red, className: 'counter red'}, 'Red counter'),
-          React.createElement('div', {value: this.blue, className: 'counter blue'}, 'Blue counter')
+          React.createElement(Counter, {value: this.props.red, className: 'counter red'}),
+          React.createElement(Counter, {value: this.props.blue, className: 'counter blue'})
         )
       )
     );
