@@ -1,0 +1,21 @@
+{
+  "name": "kodilla_18.6_react-component-lifecycle.git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server src --files src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaroslaw-bagnicki/kodilla_18.6_react-component-lifecycle.git"
+  },
+  "author": "Jarosław Bagnicki <jarek@bagnicki.net>",
+  "license": "Unlicense",
+  "homepage": "https://github.com/jaroslaw-bagnicki/kodilla_18.6_react-component-lifecycle#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.13.0",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}
