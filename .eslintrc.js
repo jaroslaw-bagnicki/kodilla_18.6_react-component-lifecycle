@@ -7,7 +7,7 @@ module.exports = {
         "plugin:react/recommended"
     ],
     "parserOptions": {
-        "ecmaVersion": 5
+        "ecmaVersion": 2015
     },
     "rules": {
         "indent": ["error",2],

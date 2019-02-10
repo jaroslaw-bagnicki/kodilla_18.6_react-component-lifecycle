@@ -10,3 +10,13 @@ html {
 }
 
 /* main styles */
+body {
+  background-color: #f6f8f6;
+  font-family: 'Quicksand', serif;
+  font-size: 24px;
+}
+
+.app {
+  max-width: 500px;
+  margin: 0 auto;
+}
