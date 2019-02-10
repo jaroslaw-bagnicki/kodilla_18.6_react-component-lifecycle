@@ -9,14 +9,129 @@ html {
   box-sizing: inherit;
 }
 
+
+/* Buttons reset */
+button {
+  margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:normal;
+	font-size: 100%;
+	font-family: inherit;
+  color: inherit;
+  outline: 0;
+}
+
 /* main styles */
+:root {
+  font-size: 10px;
+  --red: #e74c3c;
+  --blue: #2980b9;
+}
+
+
 body {
   background-color: #f6f8f6;
   font-family: 'Quicksand', serif;
-  font-size: 24px;
+  font-size: 1.6rem;
+  color: #242a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app {
-  max-width: 500px;
+  max-width: 35rem;
   margin: 0 auto;
+  padding: 1.2rem;
+}
+
+.labelsTitle {
+  margin: 2rem 1rem;
+  font-size: 4rem;
+  text-decoration: underline;
+  text-align: center;
+  
+}
+
+.labels {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+} 
+
+.redLabel,
+.blueLabel {
+  margin: 2rem;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.redLabel {
+  color: var(--red);
+}
+
+.blueLabel {
+  color: var(--blue);
+}
+
+.counters {
+  display: flex;
+  margin: 3rem 1rem;
+}
+
+.counter {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.counter .value {
+  display: inline-block;
+  margin: 0 1rem;
+  height: 6rem;
+  min-width: 4.5rem;
+  border-radius: .5rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, .5);
+  text-align: center;
+  line-height: 6rem;
+  font-size: 3.5rem;
+  color: #ecf0f1;
+  user-select: none;
+}
+
+.counter .value.red {
+  background-color: var(--red);
+}
+
+.counter .value.blue {
+  background-color: var(--blue);
+}
+
+.counter button {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: .5rem;
+  border: 2px solid #242a31;
+  background-color: #242a31;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, .5);
+  font-size: 2rem;
+  color: #f9fafa;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.counter button:hover {
+  background-color: #f9fafa;
+  color: #242a31;
+}
+
+.counter button:active {
+  transform: translateY(.15rem);
 }
