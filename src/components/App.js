@@ -1,7 +1,7 @@
 const App = React.createClass({
   propsTypes: {
-    red: React.PropTypes.number.isRequired,
-    blue: React.PropTypes.number.isRequired
+    red: React.PropTypes.number,
+    blue: React.PropTypes.number
   },
   render() {
     return (

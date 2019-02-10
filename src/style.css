@@ -31,6 +31,7 @@ button {
   font-size: 10px;
   --red: #e74c3c;
   --blue: #2980b9;
+  --green: #2ecc71;
 }
 
 
@@ -45,9 +46,9 @@ body {
 }
 
 .app {
-  max-width: 35rem;
+  max-width: 30rem;
   margin: 0 auto;
-  padding: 1.2rem;
+  padding: 1.2rem 0;
 }
 
 .labelsTitle {
@@ -59,6 +60,7 @@ body {
 }
 
 .labels {
+  display: flex;
   text-align: center;
   font-size: 6rem;
   font-weight: 600;
@@ -66,6 +68,7 @@ body {
 
 .redLabel,
 .blueLabel {
+  width: 15rem;
   margin: 2rem;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, .5);
 }
@@ -80,13 +83,15 @@ body {
 
 .counters {
   display: flex;
-  margin: 3rem 1rem;
+  margin: 3rem 0;
 }
 
 .counter {
-  margin: 1rem;
+  width: 15rem;
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 
 }
@@ -112,6 +117,11 @@ body {
 .counter .value.blue {
   background-color: var(--blue);
 }
+
+.counter .value.green {
+  background-color: var(--green);
+}
+
 
 .counter button {
   position: relative;
