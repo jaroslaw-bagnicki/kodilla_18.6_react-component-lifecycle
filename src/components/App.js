@@ -4,7 +4,6 @@ const App = React.createClass({
     blue: React.PropTypes.number.isRequired
   },
   render() {
-    console.log(this.props);
     return (
       React.createElement('div', {className: 'app'}, 
         React.createElement('h1', {className: 'labelsTitle'}, 'Init values:'),
@@ -13,8 +12,8 @@ const App = React.createClass({
           React.createElement('span', {className: 'blueLabel'}, this.props.blue)
         ),
         React.createElement('div', {className: 'counters'}, 
-          React.createElement(Counter, {value: this.props.red, className: 'counter red'}),
-          React.createElement(Counter, {value: this.props.blue, className: 'counter blue'})
+          React.createElement(Counter, {value: this.props.red, color: 'red'}),
+          React.createElement(Counter, {value: this.props.blue, color: 'blue'})
         )
       )
     );
