@@ -137,11 +137,16 @@ body {
   transition: .3s;
 }
 
-.counter button:hover {
+.counter button[disabled] {
+  opacity: .5;
+  cursor: default;
+}
+
+.counter button:not([disabled]):hover {
   background-color: #f9fafa;
   color: #242a31;
 }
 
-.counter button:active {
+.counter button:not([disabled]):active {
   transform: translateY(.15rem);
 }

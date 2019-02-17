@@ -39,7 +39,7 @@ const Counter = React.createClass({
     console.log(`${this.props.color}: render()`, 'state:', this.state);
     return (
       React.createElement('div', {className: 'counter'},
-        React.createElement('button', {className: 'decrement', onClick: this.decrement}, 
+        React.createElement('button', {className: 'decrement', onClick: this.decrement, disabled: (this.state.stateValue <= 0)}, 
           React.createElement('i', {className: 'fas fa-minus'})
         ),
         React.createElement('span', {className: `value ${this.props.color}`}, this.state.stateValue),
